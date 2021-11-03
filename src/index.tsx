@@ -6,5 +6,5 @@ ReactDOM.render(
   <StrictMode>
     <Router />
   </StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

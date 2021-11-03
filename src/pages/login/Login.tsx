@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 
-function Login() {
-
+const Login = () => {
   const setBackgroundImage = () => {
-      const body = document.querySelector('body');
+    const body = document.querySelector('body');
 
-      if (!body) {
-          return;
-      }
+    if (!body) {
+      return;
+    }
 
-      body.style.backgroundImage = 'url(/theme/dist/app/media/img/bg/background-black.png)';
-  }
+    body.style.backgroundImage = 'url(/theme/dist/app/media/img/bg/background-black.png)';
+  };
 
   useEffect(() => {
     setBackgroundImage();
@@ -21,11 +20,11 @@ function Login() {
       <div
         className="m-login m-login--5"
         id="m_login"
-        style={{ background: 'transparent'}}
+        style={{ background: 'transparent' }}
       >
         <div
           className="m-login__wrapper-1 m-portlet-full-height"
-          style={{ paddingTop: "7%" }}
+          style={{ paddingTop: '7%' }}
         >
           <div className="m-login__wrapper-1-1">
             <div className="m-login__contanier">
@@ -41,10 +40,10 @@ function Login() {
                           <img
                             src="/theme/dist/app/media/img/logos/logo-paguemax-black.png"
                             alt="Logo"
-                            style={{ width: "75%" }}
+                            style={{ width: '75%' }}
                           />
                         </span>
-                        <span style={{ display: "flex", justifyContent: "center" }}>
+                        <span style={{ display: 'flex', justifyContent: 'center' }}>
                           <strong className="m--font-metal m--margin-top-15">
                             <h5>Insira seus dados</h5>
                           </strong>
@@ -78,22 +77,22 @@ function Login() {
                         <div
                           className="col-12"
                           style={{
-                            display: "flex",
-                            justifyContent: "space-evenly",
-                            marginBottom: 15
+                            display: 'flex',
+                            justifyContent: 'space-evenly',
+                            marginBottom: 15,
                           }}
                         >
                           <button
                             type="submit"
                             className="btn btn-success"
-                            style={{ width: "40%", height: 50, borderRadius: 10 }}
+                            style={{ width: '40%', height: 50, borderRadius: 10 }}
                           >
                             Login
                           </button>
                           <button
                             type="button"
                             className="btn btn-success"
-                            style={{ width: "40%", height: 50, borderRadius: 10 }}
+                            style={{ width: '40%', height: 50, borderRadius: 10 }}
                           >
                             Criar uma conta
                           </button>
@@ -107,8 +106,8 @@ function Login() {
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   );
-}
+};
 
 export default Login;

@@ -1,0 +1,1 @@
+export const SIGNATURE = '@[PagueMAX=PIX]';
